@@ -1,0 +1,71 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<section class="menu1">
+	<div class="row">
+		<div class="col-md-12">
+			<div class="slideshow-container">
+				<div class="mySlides">
+					<img src="~/Pictures/_IGP2905_edited.jpg">
+					<div class="text-wrapper" style=" margin-top: -10%">
+						<h2 style="text-align:center; color:white; font-size: 5vw; font-family: Font1">PRVA STRANA</h2>
+					</div>
+				</div>
+				<div class="mySlides">
+					<img src="~/Pictures/Slide22.jpg">
+					<div class="text-wrapper" style="margin-top: -10%; margin-left: -50%">
+						<h2 style="text-align:center; color:white; font-size: 5vw; font-family: Font1">DRUGA STRANA</h2>
+					</div>
+				</div>
+				<div class="mySlides ">
+					<img src="~/Pictures/Slide33.jpg">
+					<div class="text-wrapper" style="margin-top: -10%;">
+						<h2 style="text-align:center; color:white; font-size: 5vw; font-family: Font1">TRECA STRANA</h2>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="menu2">
+</section>
+<section class="menu3">
+	<div class="row">
+		<div class="col-md-12">
+			<h2 style="text-align:center; color:white; font-size: 5vw; font-family: Font1; margin-top: 15%;">TRECA STRANA</h2>
+		</div>
+	</div>
+</section>
+<section class="menu4">
+	<div class="row">
+		<div class="col-md-12">
+			<div class="gallery" style="text-align:center;">
+				<a href="~/Pictures/probna1.jpg" data-lightbox="mygallery"><img src="~/Pictures/2.jpg" /></a>
+				<a href="~/Pictures/probna1.jpg" data-lightbox="mygallery"><img src="~/Pictures/2.jpg" /></a>
+				<a href="~/Pictures/probna1.jpg" data-lightbox="mygallery"><img src="~/Pictures/2.jpg" /></a>
+				<a href="~/Pictures/probna1.jpg" data-lightbox="mygallery"><img src="~/Pictures/2.jpg" /></a>
+				<a href="~/Pictures/probna1.jpg" data-lightbox="mygallery"><img src="~/Pictures/2.jpg" /></a>
+				<a href="~/Pictures/probna1.jpg" data-lightbox="mygallery"><img src="~/Pictures/2.jpg" /></a>
+			</div>
+		</div>
+	</div>
+</section>
+<script>
+	var slideIndex = 0;
+	showSlides();
+
+	function showSlides() {
+		var i;
+		var slides = document.getElementsByClassName("mySlides");
+		for (i = 0; i < slides.length; i++) {
+			slides[i].style.display = "none";
+		}
+		slideIndex++;
+		if (slideIndex > slides.length) { slideIndex = 1 }
+
+		slides[slideIndex - 1].style.display = "block";
+		setTimeout(showSlides, 5000); // Change image every 5 seconds
+	}
+</script>
+
