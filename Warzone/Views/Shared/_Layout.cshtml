@@ -12,30 +12,35 @@
 <body>
 	<header class="navbar-fixed-top">
 		<div class="row">
-			<div class="col-sm-4">
-				<a href="/"><img src="~/Pictures/logo-png.png" /></a>
+			<div class="col-sm-12 col-xs-12 col-md-3">
+				<a href="~/home/index"><img src="~/Pictures/logo-png.png" /></a>
+				<img class="btnShowHide burgerShowHide" src="~/images/burgerIcon.png" />
 			</div>
-			<div class="col-sm-8 col-md-8">
-				<div class="row">
-					<div class="col-sm-2 col-md-2">
-						<button style="border-color:yellow;">Za odrasle</button>
-					</div>
-					<div class="col-sm-2 col-md-2">
-						<button style="border-color:aqua;">za decu</button>
-					</div>
-					<div class="col-sm-2 col-md-2">
-						<button style="border-color:chartreuse;">Team Building</button>
-					</div>
-					<div class="col-sm-2 col-md-2">
-						<button style="border-color:deeppink;">Teren</button>
-					</div>
-					<div class="col-sm-2 col-md-2">
-						<a href="#"@*@Html.Action("Index", "Gallery")*@>
-							<button style="border-color:cornflowerblue;">Galerija</button>
-						</a>
-					</div>
-					<div class="col-sm-2 col-md-2">
-						<a href="#contactFooter"><button style="border-color:floralwhite;">Kontakt</button></a>
+			<div class="col-sm-9 col-md-9">
+				<div class="row justify-content-center">
+					<div class="col-md-11">
+						<div class="row">
+							<div class="col-sm-2 col-md-2">
+								<button class="btnShowHide navButton" style="border-color:yellow;">Za odrasle</button>
+							</div>
+							<div class="col-sm-2 col-md-2">
+								<button class="btnShowHide navButton" style="border-color:aqua;">za decu</button>
+							</div>
+							<div class="col-sm-2 col-md-2">
+								<button class="btnShowHide navButton" style="border-color:chartreuse;">Team Building</button>
+							</div>
+							<div class="col-sm-2 col-md-2">
+								<button class="btnShowHide navButton" style="border-color:deeppink;">Teren</button>
+							</div>
+							<div class="col-sm-2 col-md-2">
+								<a href="~/gallery/index">
+									<button class="btnShowHide navButton" style="border-color:cornflowerblue;">Galerija</button>
+								</a>
+							</div>
+							<div class="col-sm-2 col-md-2">
+								<a href="#contactFooter"><button class="btnShowHide navButton" style="border-color:floralwhite;">Kontakt</button></a>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -44,14 +49,14 @@
 	@RenderBody()
 	<footer>
 		<div class="row justify-content-center">
-			<div class="col-md-8">
+			<div class="col-md-8 nopadding">
 				<div class="row">
 					<div class="col-md-4 col-xs-12 socialFooter">
 						<h2>Follow US</h2><br /><br /><br />
 						<a target="_blank" href="https://www.facebook.com/paintballclub.warzone/" class="fa fa-facebook" style="margin-right:20px;"></a>
 						<a target="_blank" href="https://www.instagram.com/paintballnis/" class="fa fa-instagram" style="margin-left:20px;"></a>
 					</div>
-					<div class="col-md-4 col-xs-12 mapFooter">
+					<div class="col-md-4 col-xs-12 mapFooter nopadding">
 						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3681.588288761552!2d21.860962821847036!3d43.3437605494696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4755b70695e2102f%3A0x3252a5f82f1b34b6!2sWarzone+Paintball+Club!5e1!3m2!1ssr!2srs!4v1520511772607" align="left" allowfullscreen></iframe>
 					</div>
 					<div class="col-md-4 col-xs-12 contactFooter" id="contactFooter">
@@ -72,4 +77,11 @@
 
 </html>
 
+<script>
+	$(document).ready(function () {
+		$(".btnShowHide").click(function () {
+			$(".navButton").toggleClass("navButtonResponsive");
+		});
+	});
+</script>
 

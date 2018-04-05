@@ -16,40 +16,40 @@ header {
 	background-color: black;
 	height: 170px;
 	text-align: center;
-	position: fixed;
 	opacity: 0.9;
 }
 header img {
-		width: 80%;
+		width: 75%;
 		height: 72%;
-		float: left;
 		margin-top: 15px;
-		margin-left: 35px;
+		/*margin-left: 35px;*/
 }
-header button {
+.navButton {
 	width: 100%;
-	height: 25%;
-	padding: 5%;
+	height: 40%;
 	/*margin-left: 25px;*/
 	margin-top: 60px;
 	background-color: Transparent;
 	border-radius: 20px;
 	border: 5px double;
 	color: white;
-	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-	font-size: 100%;
-	outline: 0;
+	font-size: 30px;
+	outline: 0 !important;
 }
 
 header button:hover {
 		transform: scale(1.1);
 		transition: 1s;
 	}
+.burgerShowHide {
+	display: none;
+}
 
 /*---------------------MAIN MENU-------------------------------------------------------------*/
 
 /*---------------------MENU1------------------------*/
 .menu1 {
+	padding-top: 170px;
 }
 
 .slideshow-container {
@@ -86,7 +86,7 @@ header button:hover {
 .menu3 {
 	background-image: url(../Pictures/Slide11.jpg);
 	background-attachment: fixed;
-	border: 2px solid black;
+	/*border: 2px solid black;*/
 	background-repeat: no-repeat;
 	background-size: cover;
 }
@@ -119,6 +119,7 @@ header button:hover {
 /*---------------------FOOTER------------------------------------------*/
 
 footer {
+	width: 100%;
 	height: 250px;
 	background-color: black;
 	border-top: 1px solid #808080;
@@ -222,30 +223,61 @@ footer {
 /*--------------------*/
 
 
-@keyframes bottomFadeOut {
-	0% {
-		position: absolute;
-		bottom: -5rem;
-		opacity: 0;
+.row {
+	margin-left: 0 !important;
+	margin-right: 0 !important;
+}
+
+.nopadding {
+	padding: 0;
+} 
+
+@media only screen and (max-width: 600px) {
+	header {
+		height: auto;
+		text-align:center;
 	}
 
-	75% {
-		position: absolute;
-		bottom: 25%;
-		opacity: 1;
+.navButton {
+		display: none;
 	}
 
-	100% {
-		opacity: 0;
+header img {
+	padding-top: 15px;
+	margin:0;
+}
+.navButtonResponsive {
+	display:block;
+	width: 45%;
+	margin-top: 7px;
+	left: 50%;
+	margin-bottom: 7px;
+	font-size: 15px;
+	
+}
+.burgerShowHide {
+		margin: 0;
+		margin-left: 10px;
+		display: block;
+		width: 10%;
 	}
+
+.menu1 {
+	padding-top: 148px;
 }
-.fifth-text {
-	font-size: 5rem;
-	position: absolute;
-	left: 5%;
-	bottom: 25%;
-	opacity: 0;
-	color: #F0EBA3;
-	animation-name: bottomFadeOut;
-	animation-duration: 4s;
+
+.galleryWrap {
+		background-image: none;
+		background-color: black;
+	}
+.galleryImgFront img {
+		width: 70%;
+		height: 20%;
+		border-radius: 30px;
+		border: 3px solid #808080;
+		margin-left: 0;
 }
+.gallerySection {
+}
+}
+
