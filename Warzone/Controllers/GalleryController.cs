@@ -18,5 +18,10 @@ namespace Warzone.Controllers
 		{
 			return View();
 		}
+
+		public ActionResult TeamBuilding()
+		{
+			return View();
+		}
 	}
 }

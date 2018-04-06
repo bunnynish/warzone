@@ -165,6 +165,8 @@
     <Content Include="images\prev.png" />
     <Content Include="Pictures\2.jpg" />
     <Content Include="Pictures\AkcijeZavrseno.jpg" />
+    <Content Include="Pictures\backButton.png" />
+    <Content Include="Pictures\ttt.JPG" />
     <Content Include="Pictures\logo-png.png" />
     <Content Include="Pictures\odrasliZavrseno.jpg" />
     <Content Include="Pictures\OpremaZavrseno.jpg" />
@@ -174,6 +176,7 @@
     <Content Include="Pictures\Slide33.jpg" />
     <Content Include="Pictures\teambZavrseno.jpg" />
     <Content Include="Pictures\TerenZavrseno.jpg" />
+    <Content Include="Pictures\tttt.jpg" />
     <Content Include="Pictures\wall.png" />
     <Content Include="Pictures\_IGP2905_edited.jpg" />
     <Content Include="Scripts\bootstrap.js" />
@@ -210,6 +213,7 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Gallery\Index.cshtml" />
     <Content Include="Views\Gallery\Rodjendani.cshtml" />
+    <Content Include="Views\Gallery\TeamBuilding.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
