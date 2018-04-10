@@ -164,19 +164,22 @@
     <Content Include="images\next.png" />
     <Content Include="images\prev.png" />
     <Content Include="Pictures\2.jpg" />
+    <Content Include="Pictures\AkcijeSlider.jpg" />
     <Content Include="Pictures\AkcijeZavrseno.jpg" />
     <Content Include="Pictures\backButton.png" />
+    <Content Include="Pictures\RodjendaniSlider.jpg" />
+    <Content Include="Pictures\Slider1.jpg" />
+    <Content Include="Pictures\Slider2.jpg" />
+    <Content Include="Pictures\Slider3.jpg" />
+    <Content Include="Pictures\TeamBuildingSlider.jpg" />
+    <Content Include="Pictures\TerenPozadina.jpg" />
     <Content Include="Pictures\ttt.JPG" />
     <Content Include="Pictures\logo-png.png" />
     <Content Include="Pictures\odrasliZavrseno.jpg" />
     <Content Include="Pictures\OpremaZavrseno.jpg" />
     <Content Include="Pictures\RodjendaniZavrsena.jpg" />
-    <Content Include="Pictures\Slide11.jpg" />
-    <Content Include="Pictures\Slide22.jpg" />
-    <Content Include="Pictures\Slide33.jpg" />
     <Content Include="Pictures\teambZavrseno.jpg" />
     <Content Include="Pictures\TerenZavrseno.jpg" />
-    <Content Include="Pictures\tttt.jpg" />
     <Content Include="Pictures\wall.png" />
     <Content Include="Pictures\_IGP2905_edited.jpg" />
     <Content Include="Scripts\bootstrap.js" />
@@ -214,6 +217,7 @@
     <Content Include="Views\Gallery\Index.cshtml" />
     <Content Include="Views\Gallery\Rodjendani.cshtml" />
     <Content Include="Views\Gallery\TeamBuilding.cshtml" />
+    <Content Include="Views\Gallery\Teren.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
