@@ -18,7 +18,7 @@
 header {
 	width: 100%;
 	background-color: black;
-	height: 170px;
+	height: 11em;
 	text-align: center;
 	opacity: 0.7;
 }
@@ -220,7 +220,6 @@ header button:hover {
 	height: 85%;
 	margin-top: 3em;
 	text-align: center;
-	padding:1em;
 }
 
 .centerMenu6 {
@@ -720,7 +719,7 @@ header img {
 	font-size: 3em;
 	text-align: center;
 }
-	/*-------------------MENU4------------*/
+/*-------------------MENU4------------*/
 .menu4 {
 	height: auto;
 	padding: 1em;
@@ -741,9 +740,47 @@ header img {
 }
 
 
-@media only screen and (min-width: 992px) and (max-width: 1280px) {
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+
+/*-------------------HEADER & NAVIGATION------------*/
+header {
+	height: 8em;
+	text-align: center;
+}
+.navButton {
+	margin-top: 1.3em;
+	font-size:1.3em;
+	height:55%;
+}
+/*-------------------MENU2------------*/
 .menu2 {
+	height: 570px;
+}
+.textMenu2 {
+	font-size:1.5em;
+}
+/*-------------------MENU3------------*/
+.textMenu3 {
+	font-size: 3.2em;
+	text-align: center;
+}
+/*-------------------MENU6------------*/
+.menu6 {
 	height: auto;
-	padding: 1em;
+	padding:1em;
 }
 }
+
+/*-------------------MEDIA MIX-----------------------------*/
+@media only screen and (min-width: 1201px) and (max-width: 1873px) {
+.navButton {
+	font-size: 1.6em;
+	height:45%;
+}
+}
+
+@media only screen and (min-width: 1201px) and (max-width: 1500px) {
+.textMenu3 {
+	font-size: 3.9em;
+}
+
