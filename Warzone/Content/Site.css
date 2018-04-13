@@ -18,7 +18,7 @@
 header {
 	width: 100%;
 	background-color: black;
-	height: 9em;
+	height: 8em;
 	text-align: center;
 	opacity: 0.7;
 }
@@ -781,7 +781,7 @@ header {
 
 @media only screen and (min-width: 1201px) and (max-width: 1580px) {
 	.navButton {
-		font-size: 1.34em;
+		font-size: 1.20em;
 		height: 47%;
 		margin-top: 1.9em;
 	}
