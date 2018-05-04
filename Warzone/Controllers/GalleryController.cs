@@ -28,5 +28,20 @@ namespace Warzone.Controllers
 		{
 			return View();
 		}
+
+		public ActionResult Odrasli()
+		{
+			return View();
+		}
+
+		public ActionResult Oprema()
+		{
+			return View();
+		}
+
+		public ActionResult Akcije()
+		{
+			return View();
+		}
 	}
 }

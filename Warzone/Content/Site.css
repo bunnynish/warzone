@@ -42,8 +42,8 @@ header img {
 }
 
 header button:hover {
-		transform: scale(1.1);
-		transition: 1s;
+	transform: scale(1.1);
+	transition: 1s;
 	}
 .burgerShowHide {
 	display: none;
@@ -101,7 +101,7 @@ header button:hover {
 /*---------------------MENU2------------------------*/
 .menu2 {
 	width: 100%;
-	height: 900px;
+	height: 60em;
 	background-color: white;
 }
 .menu2 h1 {
@@ -109,7 +109,7 @@ header button:hover {
 }
 .leftMenu2 {
 	background-color:lightgrey;
-	height:85%;
+	height:100%;
 	padding:0;
 	margin-top: 3em;
 }
@@ -120,14 +120,23 @@ header button:hover {
 }
 .rightMenu2 {
 	background-color: lightgrey;
-	height: 85%;
+	height: 100%;
 	margin-top: 3em;
 	text-align:center;
+}
+.bottomMenu2 {
+	height: 72%;
+	background: lightgrey;
+	font-family: Font2;
 }
 .textMenu2 {
 	padding: 1em;
 	font-family: Font2;
 	color: darkblue;
+}
+
+.textMenu2 a:hover {
+	color:red !important;
 }
 /*---------------------MENU3------------------------*/
 .menu3 {
@@ -138,19 +147,19 @@ header button:hover {
 	height: 570px;
 }
 .centralMenu3 {
-	background-color: gold;
-	height: max-content;
-	margin-top: 15em;
-	opacity:0.8;
-	border-radius: 2em;
+background-color: gold;
+height: max-content;
+margin-top: 15em;
+opacity:0.8;
+border-radius: 2em;
 }
 .textMenu3 {
-	font-size: 5em;
-	text-align: center;
-	color: white;
-	text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
-	padding: 0.6 0em;
-	margin: 0;
+font-size: 5em;
+text-align: center;
+color: white;
+text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+padding: 0.6 0em;
+margin: 0;
 }
 /*---------------------MENU4------------------------*/
 .menu4 {
@@ -173,9 +182,9 @@ header button:hover {
 }
 .textMenu4 {
 	font-family: Font2;
-	margin-top: 3.5em;
+	margin-top: 2.2em;
 	color: gold;
-	text-shadow: 1px 1px 1px black, 0 0 10px blue, 0 0 5px darkblue;
+	text-shadow: 1px 2px 1px black, 0 0 10px blue, 0 0 5px darkblue;
 }
 /*---------------------MENU5------------------------*/
 .menu5 {
@@ -361,16 +370,71 @@ footer {
 	height: auto;
 	background-color: black;
 }
+.naslovRodjendani {
+	font-family:Font2;
+	text-align:center;
+	font-size: 5em;
+	color:white;
+}
 /*----------TEAMBUILDING------------------*/
 #teamBuildingSection {
 	padding-top: 170px;
 	height: auto;
 	background-color: black;
 }
+.naslovTeamBuilding {
+	font-family: Font2;
+	text-align: center;
+	font-size: 5em;
+	color: white;
+} 
+/*-------------TEREN----------------------*/
 #terenSection {
 	padding-top: 170px;
 	height: auto;
-	background-color:black;
+	background-color: black;
+}
+.naslovTeren {
+	font-family: Font2;
+	text-align: center;
+	font-size: 5em;
+	color: white;
+} 
+/*-------------ODRASLI-------------------*/
+#odrasliSection {
+	padding-top: 170px;
+	height: auto;
+	background-color: black;
+}
+.naslovOdrasli {
+	font-family: Font2;
+	text-align: center;
+	font-size: 5em;
+	color: white;
+}
+/*--------------OPREMA--------------------*/
+#opremaSection {
+	padding-top: 170px;
+	height: auto;
+	background-color: black;
+}
+.naslovOprema {
+	font-family: Font2;
+	text-align: center;
+	font-size: 5em;
+	color: white;
+}
+/*-----------AKCIJE--------------------*/
+#akcijeSection {
+	padding-top: 170px;
+	height: auto;
+	background-color: black;
+}
+.naslovAkcije {
+	font-family: Font2;
+	text-align: center;
+	font-size: 5em;
+	color: white;
 }
 /*---------------------------------------------------------------*/
 .row {
@@ -522,6 +586,11 @@ header img {
 			margin-left: 0;
 }
 
+.gallerythumbs {
+	width: 90%;
+	filter: grayscale(0);
+} 
+
 #gallerySection {
 		height: auto;
 }
@@ -658,13 +727,13 @@ header img {
 	margin-left: 73px;
 }
 
-	.galleryImgFront img {
-		width: 70%;
-		height: 20%;
-		border-radius: 30px;
-		border: 3px solid #808080;
-		margin-left: 0;
-	}
+.galleryImgFront img {
+	width: 70%;
+	height: 20%;
+	border-radius: 30px;
+	border: 3px solid #808080;
+	margin-left: 0;
+}
 
 #gallerySection {
 	height: auto;
@@ -773,10 +842,10 @@ header {
 
 /*-------------------MEDIA MIX-----------------------------*/
 @media only screen and (min-width: 1201px) {
-	.menu6 {
-		height:auto;
-		padding:1em;
-	}
+.menu6 {
+	height:auto;
+	padding:1em;
+}
 }
 
 @media only screen and (min-width: 1201px) and (max-width: 1580px) {
