@@ -936,9 +936,15 @@ header {
 } 
 }
 
-
-@media only screen and (min-width: 1200px) {
-
+@media only screen and (min-width: 1200px) and (max-width: 1580px) {
+.navButton {
+	font-size: 1.20em;
+	height: 47%;
+	margin-top: 1.5em;
+}
+header {
+	height:6em;
+}
 /*-------------------MENU1-------------*/
 
 .containerTxtImg1 {
@@ -952,25 +958,6 @@ header {
 .containerTxtImg3 {
 	display: none;
 }
-
-.menu6 {
-	height: auto;
-	padding: 1em;
-}
-}
-/*-------------------MEDIA MIX-----------------------------*/
-
-@media only screen and (min-width: 992px) and (max-width: 1069px) {
-	.menu2 {
-		height: 87em;
-	}
-}
-@media only screen and (min-width: 1200px) and (max-width: 1580px) {
-.navButton {
-	font-size: 1.20em;
-	height: 47%;
-	margin-top: 1.9em;
-}
 /*-------------------MENU2------------*/
 .menu2 {
 	height: 65em;
@@ -979,6 +966,7 @@ header {
 .textMenu2 {
 	font-size: 1.5em;
 }
+
 .bottomMenu2 {
 	height: 210px;
 }
@@ -988,15 +976,22 @@ header {
 }
 /*----------------MENU4--------------*/
 .menu4 {
-	height:42em;
+	height: 42em;
 }
+
 .galleryMenu4 {
-	width:48%;
+	width: 48%;
+}
+/*--------------MENU6---------------*/
+.menu6 {
+	height: auto;
+	padding: 1em;
 }
 /*--------------GALLERY---------------*/
 #gallerySection {
 	height: auto;
 }
+
 .galleryImgFront img {
 	width: 40% !important;
 	height: 160px !important;
@@ -1005,9 +1000,53 @@ header {
 .galleryImgFront {
 	margin-top: 110px;
 	margin-bottom: 15px;
-	margin-left: 170px;
-} 
+	margin-left: 50px;
 }
+}
+
+@media only screen and (min-width: 1581px) {
+/*-------------------MENU1-------------*/
+
+.containerTxtImg1 {
+	display: none;
+}
+
+.containerTxtImg2 {
+	display: none;
+}
+
+.containerTxtImg3 {
+	display: none;
+}
+/*--------------MENU6---------------*/
+.menu6 {
+	height: auto;
+	padding: 1em;
+}
+/*--------------GALLERY---------------*/
+#gallerySection {
+	height: auto;
+}
+
+.galleryImgFront img {
+	width: 40% !important;
+	height: 160px !important;
+}
+
+.galleryImgFront {
+	margin-top: 110px;
+	margin-bottom: 15px;
+	margin-left: 100px;
+}
+}
+
+/*------------------------------------MEDIA MIX----------------------------------*/
+@media only screen and (min-width: 992px) and (max-width: 1069px) {
+	.menu2 {
+		height: 87em;
+	}
+}
+
 
 @media only screen and (min-width: 1580px) and (max-width: 1873px) {
 .navButton {
@@ -1019,5 +1058,8 @@ header {
 .bottomMenu2 {
 	height: 250px;
 }
+.navButton {
+	font-size: 1.10em;
 }
 }
+
