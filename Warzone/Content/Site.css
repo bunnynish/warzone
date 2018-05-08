@@ -44,9 +44,14 @@ header img {
 header button:hover {
 	transform: scale(1.1);
 	transition: 1s;
-	}
+}
 .burgerShowHide {
 	display: none;
+}
+
+.proba {
+	transform: scale(1.1);
+	transition: 1s;
 }
 
 /*---------------------MAIN MENU-------------------------------------------------------------*/
@@ -74,30 +79,100 @@ header button:hover {
 .slidermobile {
 	display: none;
 }
-.text1menu1 {
+.containerTxtImg1 {
+	text-align:center;
+	position:absolute;
+	top: 70%;
+	left: 10%;
 	color: white;
-	font-size: 5em;
-	font-family: Font1;
-	padding-top: 0.8em;
-	padding-left: 1.2em;
-	text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
 }
-.text2menu1 {
+
+.text1 {
+	font-family: Font2;
+	font-size: 5em;
+	letter-spacing: 8px;
+	position:relative;
+	animation: text1 5s 1;
+	background-color: darkgray;
+	opacity: 0.9;
+}
+
+@keyframes text1 {
+	0% {
+		color:blue;
+	}
+	30% {
+		letter-spacing: 25px;
+		color: deeppink;
+	}
+	85% {
+		letter-spacing: 8px;
+		color:  chartreuse;
+	}
+}
+
+.containerTxtImg2 {
+	text-align: center;
+	position: absolute;
+	top: 88%;
+	left: 1%;
 	color: white;
-	font-size: 5em;
-	font-family: Font1;
-	padding-top: 0.8em;
-	padding-left: 14.5em;
-	text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
 }
-.text3menu1 {
+
+.text2 {
+	font-family: Font2;
+	font-size: 5em;
+	color:white;
+	position: relative;
+	animation: text2 6s 1;
+}
+
+@keyframes text2 {
+	0% {
+		left: 0%;
+	}
+	33% {
+		color:coral
+	}
+	66% {
+		color:aqua
+	}
+	100% {
+		left: 360%;
+	}
+}
+
+.containerTxtImg3 {
+	text-align: center;
+	position: absolute;
+	top: 10%;
+	left: 1%;
 	color: white;
-	font-size: 5em;
-	font-family: Font1;
-	padding-top: 0.8em;
-	padding-left: 1.2em;
-	text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
 }
+
+.text3 {
+	font-family: Font2;
+	font-size: 5em;
+	color: white;
+	position: relative;
+	animation: text3 5s 1;
+}
+
+@keyframes text3 {
+	0% {
+		top:5%
+	}
+	25% {
+		color: brown;
+	}
+	50% {
+		color:ghostwhite;
+	}
+	100% {
+		top: 70%;
+	}
+}
+
 /*---------------------MENU2------------------------*/
 .menu2 {
 	width: 100%;
@@ -268,7 +343,7 @@ footer {
 		outline: 0;
 }
 .socialFooter a:hover {
-			color: red;
+			color: white;
 			transition: 1s;
 }
 
@@ -302,7 +377,7 @@ footer {
 }
 
 .contactFooter a:hover {
-			color: red;
+			color: white;
 			transition: 1s;
 }
 
@@ -503,37 +578,14 @@ header img {
 .slidermobile {
 		display:block;
 }
-.text-wrapper-responsive1 {
-	margin-top: -20% !important;
+.containerTxtImg1 {
+	display:none;
 }
-.text-wrapper-responsive2 {
-	margin-top: -26% !important;
+.containerTxtImg2 {
+	display:none;
 }
-.text-wrapper-responsive3 {
-	margin-top: -20% !important;
-}
-.text1menu1 {
-	color: white;
-	font-size: 1.8em;
-	font-family: Font1;
-	padding-left: 0.3em;
-	text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
-}
-
-.text2menu1 {
-	color: white;
-	font-size: 1.8em;
-	font-family: Font1;
-	padding-left: 16.5em;
-	text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
-}
-
-.text3menu1 {
-	color: white;
-	font-size: 2em;
-	font-family: Font1;
-	padding-left: 6em;
-	text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+.containerTxtImg3 {
+	display: none;
 }
 /*-------------------MENU2------------*/
 .menu2 {
@@ -647,42 +699,18 @@ header img {
 .slidermobile {
 	display: block;
 }
-
-.text-wrapper-responsive1 {
-	margin-top: -16% !important;
+.containerTxtImg1 {
+	display: none;
 }
 
-.text-wrapper-responsive2 {
-	margin-top: -18% !important;
+.containerTxtImg2 {
+	display: none;
 }
 
-.text-wrapper-responsive3 {
-	margin-top: -16% !important;
+.containerTxtImg3 {
+	display: none;
 }
 
-.text1menu1 {
-	color: white;
-	font-size: 1.8em;
-	font-family: Font1;
-	padding-left: 1em;
-	text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
-}
-
-.text2menu1 {
-	color: white;
-	font-size: 1.8em;
-	font-family: Font1;
-	padding-left: 19.5em;
-	text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
-}
-
-.text3menu1 {
-	color: white;
-	font-size: 2em;
-	font-family: Font1;
-	padding-left: 6em;
-	text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
-}
 /*-------------------MENU2------------*/
 .menu2 {
 	height: auto;
@@ -724,7 +752,8 @@ header img {
 
 .galleryImgFront {
 	margin-top: 170px;
-	margin-left: 73px;
+	margin-left: 0;
+	text-align:center;
 }
 
 .galleryImgFront img {
@@ -733,6 +762,9 @@ header img {
 	border-radius: 30px;
 	border: 3px solid #808080;
 	margin-left: 0;
+}
+.gallerythumbs {
+	filter: grayscale(0);
 }
 
 #gallerySection {
@@ -778,6 +810,18 @@ header img {
 	width: 11%;
 	margin-top: 1.7em;
 }
+/*-------------------MENU1-------------*/
+.containerTxtImg1 {
+	display: none;
+}
+
+.containerTxtImg2 {
+	display: none;
+}
+
+.containerTxtImg3 {
+	display: none;
+}
 /*-------------------MENU2------------*/
 .menu2 {
 	height: auto;
@@ -806,24 +850,52 @@ header img {
 	height: auto;
 	padding: 1em;
 }
+
+/*----------------------------GALLERY-----------------*/
+.gallerythumbs {
+	filter: grayscale(0);
+}
+.galleryImgFront {
+	margin-top:110px;
+	margin-bottom:15px;
+} 
+.galleryImgFront img {
+		width: 44% !important;
+		height: 160px !important;
+}
+#gallerySection {
+	height: auto;
+}
 }
 
 
-@media only screen and (min-width: 992px) and (max-width: 1200px) {
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
 
 /*-------------------HEADER & NAVIGATION------------*/
 header {
-	height: 8em;
+	height: 6em;
 	text-align: center;
 }
 .navButton {
 	margin-top: 1.3em;
-	font-size:1.3em;
+	font-size:1.1em;
 	height:55%;
+}
+/*-------------------MENU1-------------*/
+.containerTxtImg1 {
+	display: none;
+}
+
+.containerTxtImg2 {
+	display: none;
+}
+
+.containerTxtImg3 {
+	display: none;
 }
 /*-------------------MENU2------------*/
 .menu2 {
-	height: 570px;
+	height: 80em;
 }
 .textMenu2 {
 	font-size:1.5em;
@@ -833,27 +905,108 @@ header {
 	font-size: 3.2em;
 	text-align: center;
 }
+/*------------------MENU4-------------*/
+.menu4 {
+	height: 50em;
+}
+.galleryMenu4 {
+	width: 87%;
+	height: 22%;
+}
+.rightMenu4 {
+	margin-top: 30px;
+}
 /*-------------------MENU6------------*/
 .menu6 {
 	height: auto;
 	padding:1em;
 }
+/*------------------GALLERY----------------*/
+#gallerySection {
+	height: auto;
+}
+.galleryImgFront img {
+	width: 40% !important;
+	height: 160px !important;
+}
+.galleryImgFront {
+	margin-top: 110px;
+	margin-bottom: 15px;
+	margin-left: 130px;
+} 
 }
 
-/*-------------------MEDIA MIX-----------------------------*/
-@media only screen and (min-width: 1201px) {
+
+@media only screen and (min-width: 1200px) {
+
+/*-------------------MENU1-------------*/
+
+.containerTxtImg1 {
+	display: none;
+}
+
+.containerTxtImg2 {
+	display: none;
+}
+
+.containerTxtImg3 {
+	display: none;
+}
+
 .menu6 {
-	height:auto;
-	padding:1em;
+	height: auto;
+	padding: 1em;
 }
+}
+/*-------------------MEDIA MIX-----------------------------*/
+
+@media only screen and (min-width: 992px) and (max-width: 1069px) {
+	.menu2 {
+		height: 87em;
+	}
+}
+@media only screen and (min-width: 1200px) and (max-width: 1580px) {
+.navButton {
+	font-size: 1.20em;
+	height: 47%;
+	margin-top: 1.9em;
+}
+/*-------------------MENU2------------*/
+.menu2 {
+	height: 65em;
 }
 
-@media only screen and (min-width: 1201px) and (max-width: 1580px) {
-	.navButton {
-		font-size: 1.20em;
-		height: 47%;
-		margin-top: 1.9em;
-	}
+.textMenu2 {
+	font-size: 1.5em;
+}
+.bottomMenu2 {
+	height: 210px;
+}
+/*-----------------MENU3-------------*/
+.textMenu3 {
+	font-size: 3.9em;
+}
+/*----------------MENU4--------------*/
+.menu4 {
+	height:42em;
+}
+.galleryMenu4 {
+	width:48%;
+}
+/*--------------GALLERY---------------*/
+#gallerySection {
+	height: auto;
+}
+.galleryImgFront img {
+	width: 40% !important;
+	height: 160px !important;
+}
+
+.galleryImgFront {
+	margin-top: 110px;
+	margin-bottom: 15px;
+	margin-left: 170px;
+} 
 }
 
 @media only screen and (min-width: 1580px) and (max-width: 1873px) {
@@ -861,9 +1014,10 @@ header {
 	font-size: 1.7em;
 }
 }
-@media only screen and (min-width: 1201px) and (max-width: 1500px) {
-.textMenu3 {
-	font-size: 3.9em;
-}
-}
 
+@media only screen and (min-width: 1200px) and (max-width: 1255px) {
+.bottomMenu2 {
+	height: 250px;
+}
+}
+}
