@@ -945,6 +945,9 @@ header {
 header {
 	height:6em;
 }
+header img {
+	margin-top:12px;
+}
 /*-------------------MENU1-------------*/
 
 .containerTxtImg1 {
