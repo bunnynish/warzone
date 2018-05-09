@@ -3,7 +3,8 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paintball Warzone</title>
+    <title>@ViewBag.Title</title>
+	<link rel="icon" type="image/png" href="~/Pictures/favicon-32x32.png">
 	<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     @Styles.Render("~/Content/css")
@@ -14,7 +15,7 @@
 		<div class="row">
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-3 col-xl-3">
 				<a href="~/home/index"><img src="~/Pictures/logo-png.png" /></a>
-				<img class="btnShowHide burgerShowHide" src="~/images/burgerIcon.png" />
+				<img class="btnShowHide burgerShowHide" alt="Logo Paintball" src="~/images/burgerIcon.png" />
 			</div>
 			<div class="col-lg-9 col-xl-9">
 				<div class="row justify-content-center">
@@ -59,19 +60,27 @@
 						<a target="_blank" href="https://www.instagram.com/paintballnis/" class="fa fa-instagram" style="margin-left:20px;"></a>
 					</div>
 					<div class="col-md-4 col-xs-12 mapFooter nopadding">
-						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3681.588288761552!2d21.860962821847036!3d43.3437605494696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4755b70695e2102f%3A0x3252a5f82f1b34b6!2sWarzone+Paintball+Club!5e1!3m2!1ssr!2srs!4v1520511772607" align="left" allowfullscreen></iframe>
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3681.588288761552!2d21.860962821847036!3d43.3437605494696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4755b70695e2102f%3A0x3252a5f82f1b34b6!2sWarzone+Paintball+Club!5e1!3m2!1ssr!2srs!4v1520511772607" align="left"  allowfullscreen></iframe>
 					</div>
 					<div class="col-md-4 col-xs-12 contactFooter" id="contactFooter">
 						<h2>Kontaktirajte nas:</h2><br /><br />
 						<span class="glyphicon glyphicon-phone-alt" style="display:inline; font-size: 25px;"></span><br />
 						<p>+381 65 5090300</p><br /><br />
 						<span class="glyphicon glyphicon-envelope" style="display:inline; font-size: 25px;"></span><br />
-						<a href="mailto:paintball.warzone@yahoo.com">paintball.warzone@yahoo.com</a>
+						<a href="mailto:paintball.warzone@yahoo.com">paintball.warzone@yahoo.com</a><br /><br />
+						<span class="info1"><p style="display:inline; font-family:Trebuchet MS"> © Warzone design - <a style="font-family:Trebuchet MS; color:#808080" href="mailto:branimir.spasic@gmail.com">branimir.spasic@gmail.com</p></a></span>
 					</div>
 				</div>
 			</div>
 		</div>
 	</footer>
+	<section class="underFooter">
+		<div class="row justify-content-center">
+			<div class="col-md-6 col-lg-4 col-xl-4">
+				<p class="info2" style="display:inline; font-family:Trebuchet MS"> © Warzone design - <a style="font-family:Trebuchet MS; color:#808080" href="mailto:branimir.spasic@gmail.com">branimir.spasic@gmail.com</p></a>
+			</div>
+		</div>
+	</section>
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
@@ -87,6 +96,8 @@
 	});
 
 	$('.navButton').click(function () {
+
+
 
 		var scrollSelector = $(this).attr('scrollSelector');
 		if (scrollSelector != undefined) {
@@ -111,9 +122,6 @@
 					break;
 				case 'actions':
 					elementToScrol = 'menu6';
-					break;
-				case 'toTop':
-					elementToScrol = 'asdf';
 					break;
 			}
 

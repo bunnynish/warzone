@@ -166,6 +166,7 @@
     <Content Include="Pictures\AkcijeSlider.jpg" />
     <Content Include="Pictures\AkcijeZavrseno.jpg" />
     <Content Include="Pictures\backButton.png" />
+    <Content Include="Pictures\favicon-32x32.png" />
     <Content Include="Pictures\Gallery\Akcije\1.JPG" />
     <Content Include="Pictures\Gallery\Akcije\10.JPG" />
     <Content Include="Pictures\Gallery\Akcije\11.JPG" />
