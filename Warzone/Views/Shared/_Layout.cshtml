@@ -21,16 +21,16 @@
 					<div class="col-xl-11">
 						<div class="row">
 							<div class="col-lg-2 col-xl-2">
-								<button class="btnShowHide navButton" scrollSelector="aboutUs_110" style="border-color:yellow;">O NAMA</button>
+								<button class="btnShowHide navButton" scrollSelector="aboutUs_84" style="border-color:yellow;">O NAMA</button>
 							</div>
 							<div class="col-lg-2 col-xl-2">
-								<button class="btnShowHide navButton" scrollSelector="birthdays_113" style="border-color:aqua;">RODJENDANI</button>
+								<button class="btnShowHide navButton" scrollSelector="birthdays_85" style="border-color:aqua;">RODJENDANI</button>
 							</div>
 							<div class="col-lg-2 col-xl-2">
-								<button class="btnShowHide navButton" scrollSelector="teamBuilding_110" style="border-color:chartreuse;">TEAM BUILDING</button>
+								<button class="btnShowHide navButton" scrollSelector="teamBuilding_84" style="border-color:chartreuse;">TEAM BUILDING</button>
 							</div>
 							<div class="col-lg-2 col-xl-2">
-								<button class="btnShowHide navButton" scrollSelector="actions_110" style="border-color:deeppink;">AKCIJE</button>
+								<button class="btnShowHide navButton" scrollSelector="actions_84" style="border-color:deeppink;">AKCIJE</button>
 							</div>
 							<div class="col-lg-2 col-xl-2">
 								<a href="~/gallery/index">
@@ -88,31 +88,37 @@
 
 	$('.navButton').click(function () {
 
-		var items = $(this).attr('scrollSelector').split('_');
-		var elementToScrol = '';
-		var scrollSelector = items.length > 0 ? items[0] : '';
-		var scrollHeight = 100;
-		if (items.length > 1) {
-			scrollHeight = parseInt(items[1]);
-		}
+		var scrollSelector = $(this).attr('scrollSelector');
+		if (scrollSelector != undefined) {
+			var items = scrollSelector.split('_');
+			var elementToScrol = '';
+			var scrollSelector = items.length > 0 ? items[0] : '';
+			var scrollHeight = 100;
+			if (items.length > 1) {
+				scrollHeight = parseInt(items[1]);
+			}
 
-		switch (scrollSelector) {
-			case 'aboutUs':
-			default:
-				elementToScrol = 'menu2';
-				break;
-			case 'birthdays':
-				elementToScrol = 'menu4';
-				break;
-			case 'teamBuilding':
-				elementToScrol = 'menu5';
-				break;
-			case 'actions':
-				elementToScrol = 'menu6';
-				break;
-		}
+			switch (scrollSelector) {
+				case 'aboutUs':
+				default:
+					elementToScrol = 'menu2';
+					break;
+				case 'birthdays':
+					elementToScrol = 'menu4';
+					break;
+				case 'teamBuilding':
+					elementToScrol = 'menu5';
+					break;
+				case 'actions':
+					elementToScrol = 'menu6';
+					break;
+				case 'toTop':
+					elementToScrol = 'asdf';
+					break;
+			}
 
-		$("html, body").animate({ scrollTop: $('.' + elementToScrol).offset().top - scrollHeight }, 1000);
+			$("html, body").animate({ scrollTop: $('.' + elementToScrol).offset().top - scrollHeight }, 1000);
+		}
 	})
 </script>
 
