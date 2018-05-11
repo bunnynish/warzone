@@ -304,6 +304,7 @@ margin: 0;
 	height: 85%;
 	margin-top: 3em;
 	text-align: center;
+	padding: 1em;
 }
 
 .centerMenu6 {
@@ -311,12 +312,14 @@ margin: 0;
 	height: 85%;
 	margin-top: 3em;
 	text-align: center;
+	padding: 1em;
 }
 .rightMenu6 {
 	background-color: deeppink;
 	height: 85%;
 	margin-top: 3em;
 	text-align: center;
+	padding: 1em;
 }
 /*---------------------FOOTER------------------------------------------*/
 footer {

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="~\Home\Index.cshtml" title="Paintball Warzone"  description="This is Home page">
+
+		<siteMapNode url="~\Gallery\Index" title="Galerija"  description="This is Gallery page">
+			<siteMapNode url="~\Akcije" title="Akcije"  description="This is Paintball Action page" />
+			<siteMapNode url="~\Odrasli" title="Odrasli"  description="This is Adult Paintball page" />
+			<siteMapNode url="~\Rodjendani" title="Rodjendani"  description="This is Birthday page" />
+			<siteMapNode url="~\TeamBuilding" title="TeamBuilding"  description="This is Team Building page" />
+			<siteMapNode url="~\Teren" title="Teren"  description="This is Paintball Field page" />
+			<siteMapNode url="~\Oprema" title="Oprema"  description="This is Equipment page" />
+		</siteMapNode>
+	
+	</siteMapNode>
+</siteMap>

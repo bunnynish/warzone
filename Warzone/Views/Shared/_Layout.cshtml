@@ -1,14 +1,22 @@
 ﻿<!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title</title>
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#">
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Osetite adrenalin igrajte paintball igru i testirajte svoje limite.To je najzanimljiviji sport koji se igra u prirodnom okruzenju,obojite dan svim bojama" />
+	<meta name="keywords" content="Paintball, boja, puska, za decu, maska, zastitni prsluk, rukavice, adrenalin, zavisnost, sport, priroda, uzbudjenje, warzone, Nis, nezaboravno iskustvo, ekstremno, zabava, timski rad, samopouzdanje, mere bezbednosti, kuglice, kalibar, marker, team buiding" />
+	<meta name="author" content="branimir.spasic@gmail.com" />
+	<meta property="og:title" content="Paintball Warzone" />
+	<meta property="og:description" content="Osetite adrenalin igrajte paintball igru i testirajte svoje limite.To je najzanimljiviji sport koji se igra u prirodnom okruzenju,obojite dan svim bojama" />
+	<meta property="og:url" content="#" />
+	<meta property="og:image" content="#" />
+	<meta property="og:site_name" content="paintballnis" />
+	<title>@ViewBag.Title</title>
 	<link rel="icon" type="image/png" href="~/Pictures/favicon-32x32.png">
 	<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    @Styles.Render("~/Content/css")
-    @Scripts.Render("~/bundles/modernizr")
+	@Styles.Render("~/Content/css")
+	@Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
 	<header class="navbar-fixed-top">
@@ -22,16 +30,26 @@
 					<div class="col-xl-11">
 						<div class="row">
 							<div class="col-lg-2 col-xl-2">
-								<button class="btnShowHide navButton" scrollSelector="aboutUs_84" style="border-color:yellow;">O NAMA</button>
+								<a href="#aboutUs_84" id="onama">
+									<button class="btnShowHide navButton" scrollSelector="aboutUs_84" style="border-color:yellow;">O NAMA</button>
+
+								</a>
 							</div>
 							<div class="col-lg-2 col-xl-2">
-								<button class="btnShowHide navButton" scrollSelector="birthdays_85" style="border-color:aqua;">RODJENDANI</button>
+								<a href="#birthdays_85" id="rodjendani">
+
+									<button class="btnShowHide navButton" scrollSelector="birthdays_85" style="border-color:aqua;">RODJENDANI</button>
+								</a>
 							</div>
 							<div class="col-lg-2 col-xl-2">
-								<button class="btnShowHide navButton" scrollSelector="teamBuilding_84" style="border-color:chartreuse;">TEAM BUILDING</button>
+								<a href="#teamBuilding_84" id="teamBuilding">
+									<button class="btnShowHide navButton" scrollSelector="teamBuilding_84" style="border-color:chartreuse;">TEAM BUILDING</button>
+								</a>
 							</div>
 							<div class="col-lg-2 col-xl-2">
-								<button class="btnShowHide navButton" scrollSelector="actions_84" style="border-color:deeppink;">AKCIJE</button>
+								<a href="#actions_84" id="akcije">
+									<button class="btnShowHide navButton" scrollSelector="actions_84" style="border-color:deeppink;">AKCIJE</button>
+								</a>
 							</div>
 							<div class="col-lg-2 col-xl-2">
 								<a href="~/gallery/index">
@@ -60,7 +78,7 @@
 						<a target="_blank" href="https://www.instagram.com/paintballnis/" class="fa fa-instagram" alt="follow us on instagram" style="margin-left:20px;"></a>
 					</div>
 					<div class="col-md-4 col-xs-12 mapFooter nopadding">
-						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3681.588288761552!2d21.860962821847036!3d43.3437605494696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4755b70695e2102f%3A0x3252a5f82f1b34b6!2sWarzone+Paintball+Club!5e1!3m2!1ssr!2srs!4v1520511772607" align="left"  allowfullscreen></iframe>
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3681.588288761552!2d21.860962821847036!3d43.3437605494696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4755b70695e2102f%3A0x3252a5f82f1b34b6!2sWarzone+Paintball+Club!5e1!3m2!1ssr!2srs!4v1520511772607" align="left" allowfullscreen></iframe>
 					</div>
 					<div class="col-md-4 col-xs-12 contactFooter" id="contactFooter">
 						<h2>Kontaktirajte nas:</h2><br /><br />
@@ -81,9 +99,9 @@
 			</div>
 		</div>
 	</section>
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
-    @RenderSection("scripts", required: false)
+	@Scripts.Render("~/bundles/jquery")
+	@Scripts.Render("~/bundles/bootstrap")
+	@RenderSection("scripts", required: false)
 </body>
 
 </html>
@@ -93,11 +111,50 @@
 		$(".btnShowHide").click(function () {
 			$(".navButton").toggleClass("navButtonResponsive");
 		});
+		////////////
+		var scrollSelector = document.URL.split('#')[1];
+		if (scrollSelector != undefined) {
+			var items = scrollSelector.split('_');
+			var elementToScrol = '';
+			var scrollSelector = items.length > 0 ? items[0] : '';
+			var scrollHeight = 100;
+			if (items.length > 1) {
+				scrollHeight = parseInt(items[1]);
+			}
+
+			switch (scrollSelector) {
+				case 'aboutUs':
+				default:
+					elementToScrol = 'menu2';
+					break;
+				case 'birthdays':
+					elementToScrol = 'menu4';
+					break;
+				case 'teamBuilding':
+					elementToScrol = 'menu5';
+					break;
+				case 'actions':
+					elementToScrol = 'menu6';
+					break;
+			}
+
+			$("html, body").animate({ scrollTop: $('.' + elementToScrol).offset().top - scrollHeight }, 1000);
+		}
+		/////////////
 	});
 
+	/////////////////
+	var page = document.URL.split('#');
+	var pageName = page[0].split('/');
+	var pageNameInPosition = pageName[pageName.length - 2] + "/" + pageName[pageName.length - 1];
+	if (pageNameInPosition != "home/index") {
+		$("#onama").attr('href', '../home/index#aboutUs_84')
+		$("#rodjendani").attr('href', '../home/index#birthdays_85')
+		$("#teamBuilding").attr('href', '../home/index#teamBuilding_84')
+		$("#akcije").attr('href', '../home/index#actions_84')
+	}
+	/////////////////
 	$('.navButton').click(function () {
-
-
 
 		var scrollSelector = $(this).attr('scrollSelector');
 		if (scrollSelector != undefined) {
